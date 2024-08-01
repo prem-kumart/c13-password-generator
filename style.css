@@ -316,6 +316,15 @@ input[type=checkbox]:checked {
 
 
 @media only screen and (min-width: 540px){
+
+
+
+    .selection-section {
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
    
     .strength-section {
         display: flex;
@@ -347,6 +356,10 @@ input[type=checkbox]:checked {
     
     .character-number {
         font-size: 2rem;
+    }
+
+    .button-section {
+        padding: 0.5rem 2rem 1.5rem 2rem;
     }
     
 }
