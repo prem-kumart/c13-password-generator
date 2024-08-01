@@ -43,7 +43,7 @@ const btnGenerate =  document.querySelector('.btn-generate');
 const arrowIconEl =  document.querySelector('.arrow');
 
 let password="";
-let passwordLength = 8;
+let passwordLength = 0;
 let copyContentBool = false;  // Keep track visibility of copied text.
 
 
@@ -129,10 +129,11 @@ const PatternCheck = function(passLength,charArray,regexPattern)
 // color change as the slider changes
 const sliderColor = function(){
     const progress = (passwordLength / slider.max) * 100;
+    console.log(progress)
    slider.style.background = `linear-gradient(to right, #A4FFAF ${progress}%, #18171F  ${progress}%)`;
 }
 
-sliderColor()
+
 
 
 // Visibility of copied text.
