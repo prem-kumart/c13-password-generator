@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+  
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+   <!--Header Section-->
+   <header>
+       <h1>Password Generator</h1>
+   </header>
+
+   <main>
+            <div class="input-card">
+               <input id="password-form-input" name="password-form-input"  value="P4$5W0rD!"/>
+                <div class="copied">
+                  <p class="copy-text">COPIED</p>
+                  <a class="copy-icon-link" href="#">  
+                    <img src="assets/images/icon-copy.svg" />
+                  </a>
+                 </div>
+            </div>
+            <div class="divide">
+                   
+            </div>
+            <div class="selection-section">
+            <div class="character-slider-section">
+                <div class="character">
+                        <p class="char-text">Character Length</p>
+                        <p class="character-number">8</p>
+                </div>
+                <div class="slidecontainer">
+                  <input type="range" min="0" max="16" value="8" class="slider" id="myRange" step="1" />
+                  
+                </div>
+            </div>
+            <div class="include-section">
+         
+                <div class="checkbox">
+                  
+                  <input type="checkbox" id="uppercase" name='Uppercase' value="Uppercase"/>
+                  <label class='checkbox-label' for="Uppercase"> Include Uppercase Letters</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="lowercase" name='Lowercase' value="Lowercase"/>
+                  <label class='checkbox-label' for="Uppercase"> Include Lowercase Letters</label>
+                </div>
+                <div class="checkbox">
+                
+                  <input type="checkbox" id="numbers" name='Numbers' value="Numbers"/>
+                  <label class='checkbox-label' for="Uppercase"> Include Numbers Letters</label>
+                </div>
+                <div class="checkbox">
+                              
+                  <input type="checkbox" id="symbols" name='Symbols' value="Symbols"/>
+                  <label class='checkbox-label'  for="Uppercase"> Include Symbols Letters</label>
+                </div>
+            </div>
+
+            <div class="strength-section">
+                 <p class="strength">STRENGTH</p>
+                 <div class="strength-bar">
+                      <p class="strength-name"></p>
+                      <div class="bar bar-one"></div>
+                      <div class="bar bar-two"></div>
+                      <div class="bar bar-three"></div>
+                      <div class="bar bar-four"></div>
+                 </div>
+
+            </div>
+          </div>
+
+
+          <div class="button-section">
+            <button class="btn-generate"> GENERATE</button>
+            <img class='arrow' src='assets/images/icon-arrow-right.svg' alt="arrow picture" />
+           
+          </div>
+  </main>
+
+
+
+
+
+
+ 
+
+  
+
+</body>
+</html>
